@@ -1,0 +1,69 @@
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <fieldset>
+        <div class="mx-auto max-w-2xl lg:mx-0 mt-6">
+            <legend class="text-md font-semibold leading-6 text-gray-900">Choose your payment method</legend>
+        </div>
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 sm:mt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">      
+            <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="ab tn w-full pt-10">
+                    <div class="lg:max-w-lg text-center pb-6">
+                        <h2 class="text-base font-semibold leading-7 text-indigo-600">Credit Card</h2> 
+                    </div>     
+                    <a class="mx-auto flex justify-center w-full" title="Click to View More">
+                        <img class="rounded-md h-60 w-70" src="../assets/creditCard.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="group relative"> 
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Convenience: Credit cards offer a convenient and widely accepted payment method both online and offline.
+                    Security: They provide a secure way to make transactions with features like fraud protection and chargeback options.
+                    Rewards: Many credit cards offer reward programs, cashback, or travel benefits for cardholders.
+                    </p>
+                </div> 
+                <div class="flex w-full justify-center pt-10">
+                    <input id="creditCard" name="paymentMethod" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                </div>
+            </article>
+            <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="ab tn w-full pt-10">
+                    <div class="lg:max-w-lg text-center pb-6">
+                        <h2 class="text-base font-semibold leading-7 text-indigo-600">Paypal</h2> 
+                    </div>     
+                    <a class="mx-auto flex justify-center w-full" title="Click to View More">
+                        <img class="rounded-md h-60 w-70" src="../assets/paypal.jpg" alt="">
+                    </a>
+                </div>
+                <div class="group relative"> 
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Security: PayPal offers a secure online payment platform with encryption and buyer protection.
+                        Convenience: Users can make payments without sharing sensitive financial information, reducing the risk of identity theft.
+                        Online Shopping: Widely used for online transactions, PayPal is integrated into many e-commerce platforms, making online shopping seamless.
+                    </p>
+                </div> 
+                <div class="flex w-full justify-center pt-10">
+                    <input id="paypal" name="paymentMethod" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                </div>
+            </article>
+            <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="ab tn w-full pt-10">
+                    <div class="lg:max-w-lg text-center pb-6">
+                        <h2 class="text-base font-semibold leading-7 text-indigo-600">Cash</h2> 
+                    </div>     
+                    <a class="mx-auto flex justify-center w-full" title="Click to View More">
+                        <img class="rounded-md h-60 w-70" src="../assets/cash.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="group relative"> 
+                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Universal Acceptance: Cash is universally accepted, making it a reliable form of payment almost everywhere.
+                        Anonymity: Using cash provides a level of privacy as transactions are not linked to personal information.
+                        Budget Control: Paying with cash can help individuals control their spending and stick to a budget.
+                    </p>
+                </div> 
+                <div class="flex w-full justify-center pt-10">
+                    <input id="cash" name="paymentMethod" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                </div>
+            </article>
+        </div>
+    </fieldset>
+    <div class="mt-6 flex items-center justify-end">
+        <button type="button" class="rounded-md bg-indigo-600 px-1 py-0.5 text-xs font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" (click)="makePayment()">Make Payment</button>
+    </div>
+</div>

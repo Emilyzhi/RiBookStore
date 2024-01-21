@@ -1,0 +1,75 @@
+<app-carousel class="mx-auto px-6 lg:px-8 grid max-w-7xl" [auto]="true">
+      <div *carouselSlide>
+        <div class="slide" style="background-image:url(../assets/carousel6.webp)"> 
+            
+        </div>
+      </div>
+      <div *carouselSlide>
+        <div class="slide" style="background-image:url(../assets/carousel2.jpeg)">   
+            
+        </div>
+      </div>
+      <div *carouselSlide>
+        <div class="slide" style="background-image:url(../assets/carousel3.jpg)"> 
+             
+        </div>
+      </div>
+      <div *carouselSlide>
+        <div class="slide" style="background-image:url(../assets/carousel4.webp)">
+            
+        </div>
+      </div>
+    </app-carousel>
+  <div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0 my-10">
+      <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">Our Collections</h3>
+      <p class="mt-2 text-lg leading-8 text-gray-600">Learn what kinds of book we have to let you quickly get what you want.</p>
+    </div>
+    <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="ab tn">
+            <img class="rounded-md" src="../assets/collection1.jpg" alt="">
+        </div>
+        <div class="group relative">
+          <h3 class="mt-3 flex justify-between text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+            <span>Programming</span>     
+            <a class="underline text-sm" [routerLink]="['/bookList']" [queryParams]="{collection:'Programming'}" title="Click to View More">View more...</a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Dive into the world of coding and software development with our extensive Programming Collection. From beginner-friendly guides to advanced language references, explore a wide range of titles that cater to every skill level.</p>
+        </div>
+      </article>
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="ab tn">
+            <img class="rounded-md" src="../assets/collection2.jpg" alt="">
+        </div>
+        <div class="group relative">
+          <h3 class="mt-3 flex justify-between text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+            <span>Children</span>
+            <a class="underline text-sm" [routerLink]="['/bookList']" [queryParams]="{collection:'Children'}" title="Click to View More">View more...</a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Spark the imagination of young minds with our delightful Children's Collection. Filled with enchanting stories, educational adventures, and captivating illustrations, these books are perfect companions for young readers on their journey of discovery.</p></div>
+      </article>
+      <article class="flex max-w-xl flex-col items-start justify-between">
+        <div class="ab tn">
+            <a [routerLink]="['/bookList']" [queryParams]="{collection:'Cooking'}" title="Click to View More">
+                <img class="rounded-md" src="../assets/collection3.jpeg" alt="">
+            </a>
+        </div>
+        <div class="group relative">
+          <h3 class="mt-3 flex justify-between text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+            <span>Cooking</span>
+            <a class="underline text-sm" [routerLink]="['/bookList']" [queryParams]="{collection:'Cooking'}" title="Click to View More">View more...</a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Embark on a culinary adventure with our delectable Cooking Collection. Whether you're a seasoned chef or a kitchen enthusiast, discover a diverse selection of cookbooks featuring recipes from around the world. Unleash your creativity and elevate your cooking skills</p></div>
+      </article>
+    </div>
+  </div>
+</div>
+<div class="text-center mx-auto px-6 lg:px-8 grid max-w-7xl my-16">
+    <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">New way to enrich your knowledge online</h1>
+    <p class="mt-6 text-lg leading-8 text-gray-600">An online bookstore provides a dynamic and accessible platform that enhances the overall book-buying experience for readers while offering operational advantages for the bookstore itself.</p>
+</div>
+
+  

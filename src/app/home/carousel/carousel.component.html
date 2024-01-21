@@ -1,0 +1,22 @@
+<div class="carouselContainer">
+  <div class="carouselSlider">
+    <ol [style.left.%]="currentSlide * -100" class="carouselSlides" (mouseenter)="stopInterval()"
+        (mouseleave)="startInterval()">
+      <li *ngFor="let slide of slides; let index = index" [ngClass]="{'carouselSlideActive':index===currentSlide}"
+          class="carouselSlide">
+        <ng-container [ngTemplateOutlet]="slide.template"></ng-container>
+      </li>
+    </ol>
+  </div>
+  <ng-container>
+    <ol class="carouselBullets">
+      <li *ngFor="let slide of slides; let index = index">
+        <button (click)="goToSlide(index + 1, $event)"
+                [ngClass]="{'carouselBulletActive':index===currentSlide}"
+                class="carouselBullet">
+          <span class="sr-only">{{ index + 1 }}</span>
+        </button>
+      </li>
+    </ol>
+  </ng-container>
+</div>

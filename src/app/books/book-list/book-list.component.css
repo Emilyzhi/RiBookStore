@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:5em;
+    margin:5em;
+  }
+
+.imgListItem{
+    display: flex;
+    border: 2px solid gray;
+    margin:1em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imgListItem img{
+    height: 15em;
+    width: 12em;
+    margin:2em
+}
+.imgListItem .title{
+    padding-left: 2em;
+    background-color:bisque
+}
+.books {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  .books a {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .heroes a:hover {
+    left: .1em;
+  }
